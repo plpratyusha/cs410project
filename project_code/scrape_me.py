@@ -9,7 +9,7 @@ from selenium.common.exceptions import NoSuchElementException
 driver = webdriver.Chrome()
 
 # Open the website you want to scrape
-driver.get("https://sallysbakingaddiction.com/my-favorite-cornbread/")
+driver.get("https://sallysbakingaddiction.com/cherry-pie-bars/")
 
 time.sleep(5)
 

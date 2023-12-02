@@ -1,3 +1,4 @@
+import json
 import pandas as pd
 
 
@@ -83,6 +84,17 @@ scraped_features = vectorizer.transform(scraped_data['Comment'].values)
 
 # Classify the scraped data
 predicted_sentiment = classifier.predict(scraped_features)
+
+# Save sentiment analysis results to a JSON file
+results = {
+    "comments": scraped_data['Comment'].values.tolist(),
+    "actual_ratings": scraped_data['Rating'].values.tolist(),
+    "predicted_ratings": predicted_sentiment.tolist()
+}
+
+json_file_path = 'sentiment_results.json'
+with open(json_file_path, 'w') as json_file:
+    json.dump(results, json_file)
 
 # Display comment, actual rating, and predicted classification
 for comment, actual_rating, predicted_rating in zip(scraped_data['Comment'].values, scraped_data['Rating'].values, predicted_sentiment):

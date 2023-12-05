@@ -45,7 +45,7 @@ predicted_sentiment = classifier.predict(test_features)
 from sklearn.metrics import accuracy_score
 
 accuracy = accuracy_score(test_data['Rating'].values, predicted_sentiment)
-print("Accuracy:", accuracy)
+print("Accuracy on training data:", accuracy)
 
 
 
@@ -102,5 +102,5 @@ for comment, actual_rating, predicted_rating in zip(scraped_data['Comment'].valu
     
 # Evaluate the performance of the classifier
 accuracy = accuracy_score(scraped_data['Rating'].values, predicted_sentiment)
-print("Accuracy:", accuracy)
+print("Accuracy of actual comment rating predictions:", accuracy)
 

@@ -16,7 +16,7 @@ def scrape_comments_and_ratings(url):
     # Create a new instance of the Chrome WebDriver
     driver = webdriver.Chrome()
 
-    # Open the website you want to scrape
+    # Open the website to scrape
     driver.get(url)
 
     time.sleep(5)

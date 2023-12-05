@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 
-
+# Data to train with
 data_file = 'reviews.csv'
 
 # Load the CSV data into a pandas DataFrame
@@ -61,9 +61,6 @@ train_features = vectorizer.fit_transform(train_data['Review'].values)
 # Transform the test data using the same vocabulary
 test_features = vectorizer.transform(test_data['Review'].values)
 
-# Train the Naive Bayes classifier
-classifier = MultinomialNB()
-classifier.fit(train_features, train_data['Rating'].values)
 
 # Test the scraped comment data
 

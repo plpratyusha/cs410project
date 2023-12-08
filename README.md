@@ -10,7 +10,7 @@ Project: Chrome extension for sentiment analysis of recipe reviews
 
 # Usage
 
-This software can be used by downloading the folder titled “project_code” from GitHub. The reviews.csv from the Kaggle link (https://www.kaggle.com/code/gemmin/sentiment-analysis/input?select=reviews.csv) must also be downloaded and added to the same folder. 
+This software can be used by downloading the folder titled “project_code” from GitHub. The reviews.csv from this Kaggle link <https://www.kaggle.com/code/gemmin/sentiment-analysis/input?select=reviews.csv> must also be downloaded and added to the same folder. 
 
 Open your machine's terminal and navigate into the project directory (into “project_code”). Run the following scripts:
 

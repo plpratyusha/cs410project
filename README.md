@@ -1,9 +1,10 @@
 # CS 410 Fall 2023 Final Project
 
 Author: Pratyusha Pogaru
+
 Project: Chrome extension for sentiment analysis of recipe reviews
 
-# Overview of the function of the code (i.e., what it does and what it can be used for)
+# Overview
 
   This project is a Chrome extension for sentiment analysis on recipe blog comments. Sometimes, not all the comments on recipe blogs have a star rating, or the ability to rank comments from most to least liked (or vice versa). This makes it difficult to tell from a quick glance, if the recipe has (overall) more positive or negative reviews. Additionally, users must often scroll all the way to the bottom of the blog to find the comments, and then read through them to determine the sentiment. This takes time. This project aims to provide a summary of the reviews’ sentiment for a particular recipe. The idea is to give the user a quick glance, to be able to tell if a recipe is overall more liked or disliked. 
 
